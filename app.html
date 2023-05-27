@@ -1,0 +1,55 @@
+
+
+<html>
+<head>
+  <style>
+  h1{
+      height: 50px;
+      margin-left:35%;
+      margin-right:35%;
+      border: 1px solid #eeedf3;
+      background-color: powderblue ;
+  }
+  button{
+    margin-left:55%;
+    margin-right:25%;
+  }
+
+  </style>
+  <h1 align="center" color="black" style="font-family:verdana">Authentificator</h1>
+</head>
+<body style="background-color:rgb(93, 108, 239);">
+  
+  <div align="center"  style="font-family:verdana" id="cod" ></div>
+  <div align="center" style="font-family:verdana" id="nume"></div>
+  <div id="count"></div>
+  <SCRIPT language="JavaScript">
+    /*import {InMemoryStore} from 'in-memory-store';
+    let store = new InMemoryStore(obj => obj.key);
+    const Cod= {
+    nume:" ",
+    cod:0,
+    };*/
+  function MyFunction()
+  {
+      /*var var_count = document.getElementById("count").innerHTML ;
+      const array_nume=[];
+      const array_cod=[];
+      array_nume[var_count]= prompt('Introduceti numele vostru .', ' ');
+      array_cod[var_count] = Math.floor(Math.random() * 1000000);
+      window.alert(arrauy_nume[var_count]);
+      window.alert(arrauy_nume[var_count]);
+      var_count +=1;*/
+      /*let store = new InMemoryStore(obj => obj.key);
+      var cod= newCod(prompt('Introduceti numele vostru .', ' '), Math.floor(Math.random() * 1000000));
+      store.addOne(cod);*/
+      
+      document.getElementById('cod').innerHTML =  Math.floor(Math.random() * 1000000);
+      document.getElementById('nume').innerHTML = prompt('Introduceti numele vostru .', ' ');
+      //document.getElementById("count").innerHTML= var_count;
+  }
+  </script>
+  
+  <button onclick="MyFunction()">+</button>
+</body>
+</html>
